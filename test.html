@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Books to Share - Test</title>
+<style>body{font-family:sans-serif;background:#F5EFE6;padding:20px;}</style>
+</head>
+<body>
+<h1>📚 Books to Share</h1>
+<p id="status">Chargement...</p>
+<div id="books"></div>
+<script>
+document.getElementById('status').textContent = '✅ JavaScript fonctionne!';
+const books = ['Nymphéas Noirs', 'Les Sept Sœurs', 'Changer l\'eau des Fleurs', 'Tout le Bleu du Ciel'];
+const div = document.getElementById('books');
+books.forEach(b => {
+  const p = document.createElement('p');
+  p.textContent = '📖 ' + b;
+  div.appendChild(p);
+});
+</script>
+</body>
+</html>
